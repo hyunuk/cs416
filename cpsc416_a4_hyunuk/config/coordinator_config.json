@@ -1,0 +1,12 @@
+{
+	"ClientAPIListenAddr": ":35536",
+	"WorkerAPIListenAddr": ":28975",
+	"Workers": [
+		":39252",
+		":19921",
+		":25506",
+		":36322"
+	],
+	"TracerServerAddr": ":49302",
+	"TracerSecret": ""
+}

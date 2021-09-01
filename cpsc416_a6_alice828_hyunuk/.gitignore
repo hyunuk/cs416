@@ -1,0 +1,13 @@
+*.txt
+*.log
+/.idea
+
+client
+frontend
+go
+storage
+tracing-server
+gradera5-smoketest
+gradera6-smoketest
+
+store.json

@@ -1,0 +1,10 @@
+.idea/
+*.txt
+*.jar
+client
+coordinator
+grade.txt
+*.log
+test
+tracing-server
+worker

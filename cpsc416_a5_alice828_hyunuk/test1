@@ -1,0 +1,1 @@
+./gradera5-smoketest -t trace_output.log -c client1 -r client1:get:1:key1 client1:put:1:key2 > grade1.txt

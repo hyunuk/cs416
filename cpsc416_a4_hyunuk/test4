@@ -1,0 +1,1 @@
+java -jar ./GraderA4-SmokeTest.jar --num-workers 4 --run-info client1:AQIDBA==:1:0 -t trace_output.log > grade.txt

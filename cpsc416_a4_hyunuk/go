@@ -1,0 +1,21 @@
+#!/bin/bash
+
+set -e
+make
+
+cmds=(
+"./tracing-server"
+"./coordinator"
+"./worker --listen :39252 --id worker0"
+"./worker --listen :19921 --id worker1"
+"./worker --listen :25506 --id worker2"
+"./worker --listen :36322 --id worker3"
+"./client"
+)
+for cmd in "${cmds[@]}"; do {
+	$cmd & pid=$!
+	PID_LIST+=" $pid";
+	sleep .1
+} done
+trap "kill $PID_LIST" SIGINT
+wait $PID_LIST
